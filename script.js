@@ -7,21 +7,45 @@ document.addEventListener('DOMContentLoaded', async function() {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
 
-    // List of all YAML files to load
-    const yamlFiles = [
-        'YAML/ai_agent_ides.yaml',
-        'YAML/ai_terminals.yaml',
-        'YAML/ai_agent.yaml',
-        'YAML/privacy_tools.yaml',
-        'YAML/business_productivity.yaml',
-        'YAML/local_ai.yaml',
-        'YAML/cli_ai.yaml',
-        'YAML/language_models.yaml',
-        'YAML/ai_platforms.yaml',
-        'YAML/image_generation.yaml',
-        'YAML/content_creation.yaml',
-        'YAML/development_tools.yaml'
-    ];
+    // Dynamically load all YAML files from the YAML directory
+    async function loadYamlFiles() {
+        try {
+            // First, get a list of all YAML files in the directory
+            const response = await fetch('YAML/');
+            if (!response.ok) {
+                throw new Error(`Failed to fetch YAML directory: ${response.status} ${response.statusText}`);
+            }
+            
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Extract all links that end with .yaml
+            const yamlFiles = Array.from(doc.querySelectorAll('a'))
+                .map(a => a.getAttribute('href'))
+                .filter(href => href && href.endsWith('.yaml'))
+                .map(href => `YAML/${href}`);
+            
+            return yamlFiles;
+        } catch (error) {
+            console.error('Error loading YAML files:', error);
+            // Fallback to hardcoded list if directory listing fails
+            return [
+                'YAML/ai_agent_ides.yaml',
+                'YAML/ai_terminals.yaml',
+                'YAML/ai_agent.yaml',
+                'YAML/privacy_tools.yaml',
+                'YAML/business_productivity.yaml',
+                'YAML/local_ai.yaml',
+                'YAML/cli_ai.yaml',
+                'YAML/language_models.yaml',
+                'YAML/ai_platforms.yaml',
+                'YAML/image_generation.yaml',
+                'YAML/content_creation.yaml',
+                'YAML/development_tools.yaml'
+            ];
+        }
+    }
 
     // Store all tools and categories
     let allTools = [];
@@ -29,6 +53,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
         // Load all YAML files
+        const yamlFiles = await loadYamlFiles();
+        
         for (const file of yamlFiles) {
             const response = await fetch(file);
             if (!response.ok) {
@@ -79,8 +105,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Function to extract category name from file name
     function getCategoryFromFileName(fileName) {
-        // Remove file extension and replace underscores with spaces
-        const baseName = fileName.replace('.yaml', '').replace(/_/g, ' ');
+        // Remove path prefix and file extension
+        const baseName = fileName.replace('YAML/', '').replace('.yaml', '').replace(/_/g, ' ');
 
         // Capitalize each word
         return baseName.split(' ')
@@ -124,9 +150,41 @@ document.addEventListener('DOMContentLoaded', async function() {
             const button = document.createElement('button');
             button.className = 'filter-btn';
             button.setAttribute('data-category', category);
-            button.textContent = category;
+
+            // Get appropriate icon for each category
+            const iconClass = getCategoryIcon(category);
+
+            // Create icon element
+            const icon = document.createElement('i');
+            icon.className = `category-icon ${iconClass}`;
+
+            // Append icon and text to button
+            button.appendChild(icon);
+            button.appendChild(document.createTextNode(` ${category}`));
+
             categoryFilters.appendChild(button);
         });
+    }
+
+    // Function to get appropriate icon for each category
+    function getCategoryIcon(category) {
+        const categoryIcons = {
+            'AI Agent': 'fa-solid fa-robot',
+            'AI Agent IDEs': 'fa-solid fa-code',
+            'AI Platforms': 'fa-solid fa-server',
+            'AI Terminals': 'fa-solid fa-terminal',
+            'Business Productivity': 'fa-solid fa-briefcase',
+            'CLI AI': 'fa-solid fa-keyboard',
+            'Content Creation': 'fa-solid fa-pen-fancy',
+            'Development Tools': 'fa-solid fa-wrench',
+            'Image Generation': 'fa-solid fa-image',
+            'Language Models': 'fa-solid fa-comment',
+            'Local AI': 'fa-solid fa-laptop',
+            'Privacy Tools': 'fa-solid fa-shield-alt',
+            'YAML': 'fa-solid fa-file-code'
+        };
+
+        return categoryIcons[category] || 'fa-solid fa-tag'; // Default icon if category not found
     }
 
     // Function to display tools in the container

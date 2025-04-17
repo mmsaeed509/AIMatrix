@@ -98,14 +98,19 @@ nav {
     margin-bottom: 2rem;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .search-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #search-input {
@@ -145,10 +150,12 @@ nav {
 
 .category-filters {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.8rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .filter-btn {
@@ -166,6 +173,16 @@ nav {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     box-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.category-icon {
+    margin-right: 8px;
+    font-size: 1rem;
+    color: var(--primary-color);
 }
 
 .filter-btn::before {
@@ -417,9 +434,12 @@ footer {
         padding: 1rem;
     }
 
+    /* Nav container is already in column layout */
+
     .search-container {
         flex-direction: column;
         max-width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     #search-input {
@@ -440,5 +460,7 @@ footer {
     .filter-btn {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+        min-width: auto;
+        justify-content: center;
     }
 }

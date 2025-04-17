@@ -6,6 +6,8 @@
     <title>AI Matrix - Futuristic AI Tools Directory</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Include js-yaml library for parsing YAML files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
@@ -20,13 +22,18 @@
         </header>
 
         <nav>
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search AI tools...">
-                <button id="search-button" class="search-btn">Search</button>
-            </div>
-            <div class="category-filters">
-                <button class="filter-btn active" data-category="All">All</button>
-                <!-- Category buttons will be dynamically added here -->
+            <div class="nav-container">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search AI tools...">
+                    <button id="search-button" class="search-btn">Search</button>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="All">
+                        <i class="category-icon fa-solid fa-globe"></i>
+                        All
+                    </button>
+                    <!-- Category buttons will be dynamically added here -->
+                </div>
             </div>
         </nav>
 
@@ -41,7 +48,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2023 AI Matrix | A Futuristic AI Tools Directory</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> AI Matrix | A Futuristic AI Tools Directory</p>
         </footer>
     </div>
 

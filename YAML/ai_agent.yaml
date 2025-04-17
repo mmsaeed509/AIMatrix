@@ -1,0 +1,133 @@
+categoryName: AI Agents
+tools:
+  - aiAgentID: 1
+    name: Manus
+    description: AI-powered hand tracking and haptic technology for immersive VR/AR experiences.
+    websiteUrl: https://manus.im
+    iconUrl: icons/manus.png
+
+  - aiAgentID: 2
+    name: AutoGPT
+    description: An experimental open-source application that showcases the capabilities of the GPT-4 language model to autonomously achieve goals.
+    websiteUrl: https://github.com/Torantulino/Auto-GPT
+    iconUrl: icons/AutoGPT.png
+
+  - aiAgentID: 3
+    name: AgentGPT
+    description: Autonomous AI agent that can plan and execute tasks in the browser.
+    websiteUrl: https://agentgpt.reworkd.ai
+    iconUrl: icons/AgentGPT.svg
+
+  - aiAgentID: 4
+    name: BabyAGI
+    description: An open-source autonomous AI agent that uses GPT for task management and completion.
+    websiteUrl: https://github.com/yoheinakajima/babyagi
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 5
+    name: LangChain Agents
+    description: Language model-powered agents that choose actions using tools and memory.
+    websiteUrl: https://docs.langchain.com/docs/components/agents
+    iconUrl: icons/LangChain-Agents.png
+
+  - aiAgentID: 6
+    name: CrewAI
+    description: Framework to build collaborative multi-agent systems.
+    websiteUrl: https://github.com/joaomdmoura/crewAI
+    iconUrl: icons/crewai.svg
+
+  - aiAgentID: 7
+    name: MetaGPT
+    description: Multi-agent framework that mimics a software company’s workflow.
+    websiteUrl: https://github.com/geekan/MetaGPT
+    iconUrl: icons/MetaGPT.png
+
+  - aiAgentID: 8
+    name: AutoGen
+    description: A multi-agent conversation framework by Microsoft for collaborative AI apps.
+    websiteUrl: https://github.com/microsoft/autogen
+    iconUrl: icons/AutoGen.svg
+
+  - aiAgentID: 9
+    name: Hugging Face Transformers Agents
+    description: Agents that use pretrained models to solve tasks by leveraging external tools.
+    websiteUrl: https://huggingface.co/docs/transformers/transformers_agents
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 10
+    name: Semantic Kernel
+    description: Microsoft’s SDK for building intelligent agents with LLMs and skills.
+    websiteUrl: https://github.com/microsoft/semantic-kernel
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 11
+    name: Elicit
+    description: AI research assistant for literature review and academic workflows.
+    websiteUrl: https://elicit.org/
+    iconUrl: icons/Elicit.svg
+
+  - aiAgentID: 12
+    name: ReAct Agents
+    description: A reasoning and acting framework used in LangChain and other tool-using agents.
+    websiteUrl: https://arxiv.org/abs/2210.03629
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 13
+    name: Toolformer
+    description: AI agent trained to decide when and how to use external tools.
+    websiteUrl: https://huggingface.co/papers/2302.04761
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 14
+    name: Voyager
+    description: An open-ended agent that autonomously explores and learns in Minecraft.
+    websiteUrl: https://voyager.minedojo.org/
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 15
+    name: WebGPT
+    description: OpenAI’s browser-using agent trained to answer questions via the web.
+    websiteUrl: https://openai.com/research/webgpt
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 16
+    name: SWE-Agent
+    description: Self-improving AI agent that writes and debugs code autonomously.
+    websiteUrl: https://github.com/SWE-agent/SWE-agent
+    iconUrl: icons/SWE-Agent.svg
+
+  - aiAgentID: 17
+    name: Adept ACT-1
+    description: AI assistant that learns to use software interfaces directly through UIs.
+    websiteUrl: https://www.adept.ai
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 18
+    name: Pi
+    description: A friendly and emotionally intelligent personal AI companion.
+    websiteUrl: https://pi.ai
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 19
+    name: Replika
+    description: AI chatbot that acts as a companion for conversation and mental wellness.
+    websiteUrl: https://replika.com
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 20
+    name: Character.AI
+    description: Create and chat with AI-generated characters and personalities.
+    websiteUrl: https://character.ai
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 21
+    name: Gato
+    description: DeepMind’s generalist agent for vision, control, and language tasks.
+    websiteUrl: https://www.deepmind.com/publications/a-generalist-agent
+    iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 22
+    name: AlphaCode
+    description: DeepMind’s AI agent that writes competitive programming solutions.
+    websiteUrl: https://deepmind.com/blog/article/Competitive-programming-with-AlphaCode
+    iconUrl: icons/default-icon.svg

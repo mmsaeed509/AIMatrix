@@ -1,0 +1,15 @@
+categoryName: CLI AI
+tools:
+  - cliAIID: 1
+    name: Claude Code
+    description: Anthropic's agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.
+    category: CLI AI
+    websiteUrl: https://github.com/anthropics/claude-code
+    iconUrl: icons/claude-code.png
+
+  - cliAIID: 2
+    name: Gemini Code
+    description: Google's Gemini 2.5 Pro code assistant for terminal-based development.
+    category: CLI AI
+    websiteUrl: https://github.com/raizamartin/gemini-code
+    iconUrl: icons/gemini-code.png

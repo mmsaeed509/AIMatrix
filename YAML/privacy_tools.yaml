@@ -1,0 +1,8 @@
+categoryName: Privacy & Security
+tools:
+  - privacyToolsID: 1
+    name: OnionGPT
+    description: Anonymous AI assistant accessible through the Tor network.
+    category: Privacy & Security
+    websiteUrl: http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/
+    iconUrl: https://www.torproject.org/static/images/favicon/favicon.ico

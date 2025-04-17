@@ -1,0 +1,71 @@
+categoryName: Development & Coding Tools
+tools:
+  - id: 1
+    name: GitHub Copilot
+    description: AI pair programmer that helps you write better code faster.
+    category: Development & Coding Tools
+    websiteUrl: https://github.com/features/copilot
+    iconUrl: icons/github-copilot.png
+
+  - id: 2
+    name: Tabnine
+    description: AI code completion tool that helps developers write code faster.
+    category: Development & Coding Tools
+    websiteUrl: https://www.tabnine.com/
+    iconUrl: icons/tabnine.png
+
+  - id: 3
+    name: Codeium
+    description: AI-powered code completion and chat assistant for developers.
+    category: Development & Coding Tools
+    websiteUrl: https://codeium.com/
+    iconUrl: icons/codeium.png
+
+  - id: 4
+    name: Amazon CodeWhisperer
+    description: AI-powered code suggestions and security scanning.
+    category: Development & Coding Tools
+    websiteUrl: https://aws.amazon.com/codewhisperer/
+    iconUrl: icons/codewhisperer.png
+
+  - id: 5
+    name: Replit Ghost
+    description: AI pair programmer for the Replit development environment.
+    category: Development & Coding Tools
+    websiteUrl: https://replit.com/ghost
+    iconUrl: icons/replit-ghost.png
+
+  - id: 6
+    name: CodeGeeX
+    description: Multilingual code generation and completion tool.
+    category: Development & Coding Tools
+    websiteUrl: https://codegeex.cn/
+    iconUrl: icons/codegeex.png
+
+  - id: 7
+    name: Chat2DB
+    description: AI-powered database management and query tool.
+    category: Development & Coding Tools
+    websiteUrl: https://chat2db.com/
+    iconUrl: icons/chat2db.png
+
+  - id: 8
+    name: Marblism
+    description: Generate a SaaS boilerplate from a prompt.
+    category: Development & Coding Tools
+    websiteUrl: https://marblism.com
+    iconUrl: icons/marblism.png
+
+  - id: 9
+    name: Code to Flow
+    description: Visualize and understand code flow with AI-powered flowcharts.
+    category: Development & Coding Tools
+    websiteUrl: https://codetoflow.com
+    iconUrl: icons/codetoflow.png
+
+  - id: 10
+    name: SinglebaseCloud
+    description: AI-powered backend platform with Vector DB, DocumentDB, and Auth.
+    category: Development & Coding Tools
+    websiteUrl: https://singlebase.cloud
+    iconUrl: icons/singlebasecloud.png

@@ -1,0 +1,49 @@
+categoryName: Image Generation & Art
+tools:
+  - imageGenerationID: 1
+    name: Midjourney
+    description: Generative AI creating images from textual descriptions.
+    websiteUrl: https://www.midjourney.com/
+    iconUrl: icons/Midjourney.png
+
+  - imageGenerationID: 2
+    name: Stable Diffusion
+    description: Open-source text-to-image model for generating detailed visuals.
+    websiteUrl: https://stablediffusionweb.com/
+    iconUrl: https://stablediffusionweb.com/images/logo.png
+
+  - imageGenerationID: 3
+    name: Leonardo AI
+    description: Generate production-quality creative assets with AI.
+    websiteUrl: https://app.leonardo.ai/
+    iconUrl: https://app.leonardo.ai/favicon.ico
+
+  - imageGenerationID: 4
+    name: Civit AI
+    description: Community hub for Stable Diffusion models, prompts and resources.
+    websiteUrl: https://civitai.com/
+    iconUrl: https://civitai.com/favicon.ico
+
+  - imageGenerationID: 5
+    name: Ideogram
+    description: AI art generator specializing in text rendering and typography.
+    websiteUrl: https://ideogram.ai/
+    iconUrl: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz///8AAABTU1P////////////////////////s7Oz29vZiYmIQEBAeHh7h4eHT09NCQkItLS3FxcV0dHQ6Ojq0tLSDg4OmpqaWlpZCl/6SAAAACnRSTlMA////ikVE3hjrhwjMiwAAARVJREFUKJF9UwuygyAQg2BfLX8UxN7/om+BYrW2ZkadJRp2Q2SMjcOdn3AfRka4Pc5UweNG3/3giB3ZsCsVX2IKeX6VA3vv5wADTBOgVduXvb+TIlhoKb2Abis7svAWjh4ay4EkTVJVM3T2fEXye1JGrXWkZUIoN3+SdQaLNxB+heikTOigzTJoFoGNjKIBWKmiazahk0rJBmeMLzMmU/stpE4pFCTNF1ibFbco0o2cXijklECKztpNVnZZSyPoHw0ZPKkZGuVZHfwyCs1CZrkvJtTFOVujdqQq9mWyrx1mPNi3Gb/wGEs/Z1lpSdaW9+LHedbDFtLDivCsWTjGhDJSzekxOQZM5qB9L4fraLK/i1Bf/Q7/6CUPuCjtwm8AAAAASUVORK5CYII=
+
+  - imageGenerationID: 6
+    name: DALL-E
+    description: OpenAI's advanced AI system that creates realistic images and art from natural language descriptions.
+    websiteUrl: https://labs.openai.com/
+    iconUrl: https://labs.openai.com/favicon.ico
+
+  - imageGenerationID: 7
+    name: Janus
+    description: Unified multimodal understanding and generation model for handling various types of data and tasks.
+    websiteUrl: https://github.com/deepseek-ai/Janus
+    iconUrl: https://github.com/deepseek-ai/Janus/raw/main/assets/logo.png
+
+  - imageGenerationID: 8
+    name: Weights
+    description: Platform for discovering, training and deploying open source AI models.
+    websiteUrl: https://www.weights.com/
+    iconUrl: https://www.weights.com/favicon.ico

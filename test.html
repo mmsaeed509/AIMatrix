@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Matrix - Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <h1>AI Matrix - Test Page</h1>
+    <p>This page tests the YAML loading and parsing functionality.</p>
+    
+    <div>
+        <button id="testYaml">Test YAML Loading</button>
+        <button id="testCategories">Test Categories</button>
+    </div>
+    
+    <div id="output">
+        <p>Click a button to run a test.</p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const output = document.getElementById('output');
+            
+            // Test YAML loading
+            document.getElementById('testYaml').addEventListener('click', async function() {
+                output.innerHTML = '<p>Testing YAML loading...</p>';
+                
+                const yamlFiles = [
+                    'ai_agent_ides.yaml',
+                    'ai_terminals.yaml',
+                    'language_models.yaml',
+                    'image_generation.yaml'
+                ];
+                
+                let results = '<h2>YAML Loading Results:</h2>';
+                
+                try {
+                    for (const file of yamlFiles) {
+                        try {
+                            const response = await fetch(file);
+                            if (!response.ok) {
+                                results += `<p>❌ Failed to load ${file}: ${response.status} ${response.statusText}</p>`;
+                                continue;
+                            }
+                            
+                            const yamlText = await response.text();
+                            const data = jsyaml.load(yamlText);
+                            
+                            results += `<p>✅ Successfully loaded ${file}</p>`;
+                            results += `<p>Category: ${data.categoryName || 'Not specified'}</p>`;
+                            results += `<p>Tools count: ${data.tools ? data.tools.length : 0}</p>`;
+                            
+                            // Show first tool as example
+                            if (data.tools && data.tools.length > 0) {
+                                results += '<p>First tool example:</p>';
+                                results += `<pre>${JSON.stringify(data.tools[0], null, 2)}</pre>`;
+                            }
+                            
+                            results += '<hr>';
+                        } catch (error) {
+                            results += `<p>❌ Error processing ${file}: ${error.message}</p>`;
+                        }
+                    }
+                    
+                    output.innerHTML = results;
+                } catch (error) {
+                    output.innerHTML = `<p>❌ Error: ${error.message}</p>`;
+                }
+            });
+            
+            // Test category extraction
+            document.getElementById('testCategories').addEventListener('click', function() {
+                output.innerHTML = '<p>Testing category extraction...</p>';
+                
+                const fileNames = [
+                    'ai_agent_ides.yaml',
+                    'ai_terminals.yaml',
+                    'language_models.yaml',
+                    'image_generation.yaml',
+                    'business_productivity.yaml'
+                ];
+                
+                let results = '<h2>Category Extraction Results:</h2>';
+                results += '<table border="1" cellpadding="5">';
+                results += '<tr><th>File Name</th><th>Extracted Category</th></tr>';
+                
+                fileNames.forEach(fileName => {
+                    const baseName = fileName.replace('.yaml', '').replace(/_/g, ' ');
+                    const category = baseName.split(' ')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(' ');
+                    
+                    results += `<tr><td>${fileName}</td><td>${category}</td></tr>`;
+                });
+                
+                results += '</table>';
+                output.innerHTML = results;
+            });
+        });
+    </script>
+</body>
+</html>

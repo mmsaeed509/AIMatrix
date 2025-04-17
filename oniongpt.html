@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnionGPT - Access Instructions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="icons/logo.svg" alt="AI Matrix Logo" class="logo">
+            </div>
+            <h1 class="glitch-text">ONIONGPT</h1>
+            <p class="subtitle">Anonymous AI assistant on the Tor network</p>
+        </header>
+
+        <main>
+            <div class="tool-card" style="max-width: 800px; margin: 0 auto;">
+                <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">How to Access OnionGPT</h2>
+
+                <p class="tool-description">OnionGPT is only accessible through the Tor network. Follow these steps to access it:</p>
+
+                <ol style="margin: 1.5rem 0; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 1rem;">Download and install the <a href="https://www.torproject.org/download/" target="_blank" rel="noopener noreferrer" class="tool-link">Tor Browser</a></li>
+                    <li style="margin-bottom: 1rem;">Launch the Tor Browser and wait for it to connect to the Tor network</li>
+                    <li style="margin-bottom: 1rem;">Copy the OnionGPT address below</li>
+                    <li style="margin-bottom: 1rem;">Paste it into the Tor Browser's address bar and press Enter</li>
+                </ol>
+
+                <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <p style="margin-bottom: 0.5rem; font-weight: bold; color: var(--primary-color);">OnionGPT Address:</p>
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="onion-address" value="http://oniongpt6lntsoztgylhju7nmqedlq6fjexe55z327lmxyae3nutlyad.onion/" readonly 
+                               style="background: rgba(0,0,0,0.5); color: var(--text-color); border: 1px solid var(--primary-color); padding: 0.8rem; border-radius: 4px; flex-grow: 1; font-family: monospace; margin-right: 1rem;">
+                        <button id="copy-btn" style="background-color: var(--primary-color); color: var(--background-color); border: none; padding: 0.8rem 1.2rem; border-radius: 4px; cursor: pointer; font-family: 'Squares', sans-serif;">Copy</button>
+                    </div>
+                    <p id="copy-message" style="color: var(--secondary-color); margin-top: 0.5rem; display: none;">Address copied to clipboard!</p>
+                </div>
+
+                <div style="background: rgba(255,0,230,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Important Note</h3>
+                    <p>OnionGPT can only be accessed through the Tor network for privacy and anonymity reasons. Regular browsers cannot open .onion addresses. The Tor Browser is specifically designed to access the Tor network safely.</p>
+                </div>
+
+                <a href="index.html" class="tool-link" style="display: inline-block; margin-top: 2rem;">← Back to AI Matrix</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 AI Matrix | A Futuristic AI Tools Directory</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const copyBtn = document.getElementById('copy-btn');
+            const onionAddress = document.getElementById('onion-address');
+            const copyMessage = document.getElementById('copy-message');
+
+            copyBtn.addEventListener('click', function() {
+                onionAddress.select();
+                document.execCommand('copy');
+
+                // Show the copy message
+                copyMessage.style.display = 'block';
+
+                // Hide the message after 3 seconds
+                setTimeout(function() {
+                    copyMessage.style.display = 'none';
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>

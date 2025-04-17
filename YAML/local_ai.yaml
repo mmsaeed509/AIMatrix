@@ -1,0 +1,31 @@
+categoryName: Local & Desktop AI
+tools:
+  - localAIID: 1
+    name: Jan AI
+    description: Open-source desktop app for running local LLMs with a user-friendly interface.
+    websiteUrl: https://jan.ai/
+    iconUrl: https://jan.ai/favicon.ico
+
+  - localAIID: 2
+    name: Msty
+    description: Desktop application for running and fine-tuning language models locally.
+    websiteUrl: https://msty.app/
+    iconUrl: https://msty.app/favicon.ico
+
+  - localAIID: 3
+    name: LM Studio
+    description: Desktop app for running local and private large language models with an intuitive UI.
+    websiteUrl: https://lmstudio.ai/
+    iconUrl: icons/lmstudio.webp
+
+  - localAIID: 4
+    name: OpenWebUI
+    description: User-friendly web interface for Ollama, supporting multiple models and providing a modern chat experience.
+    websiteUrl: https://github.com/open-webui/open-webui
+    iconUrl: icons/OpenWebUI.png
+
+  - localAIID: 5
+    name: Bolt.DIY
+    description: Open-source tool for building full-stack web applications using any LLM, with in-browser code execution.
+    websiteUrl: https://github.com/stackblitz-labs/bolt.diy
+    iconUrl: icons/Bolt.DIY.png

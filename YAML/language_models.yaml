@@ -1,0 +1,55 @@
+categoryName: Language Models & Chatbots
+tools:
+  - languageModelsID: 1
+    name: ChatGPT
+    description: Advanced conversational AI for text generation, translation, and more.
+    websiteUrl: https://chat.openai.com/
+    iconUrl: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
+
+  - languageModelsID: 2
+    name: Claude
+    description: Anthropic's advanced AI assistant focused on helpfulness and harmlessness.
+    websiteUrl: https://claude.ai/
+    iconUrl: https://claude.ai/favicon.ico
+
+  - languageModelsID: 3
+    name: DeepSeek
+    description: AI platform focused on deep learning research and applications.
+    websiteUrl: https://chat.deepseek.com/
+    iconUrl: icons/deepseek.svg
+
+  - languageModelsID: 4
+    name: Gemini
+    description: Google's most capable AI model, multimodal reasoning with text, images, and code.
+    websiteUrl: https://gemini.google.com/app
+    iconUrl: https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg
+
+  - languageModelsID: 5
+    name: KimiAI
+    description: Intelligent conversational AI with strong contextual understanding.
+    websiteUrl: https://kimi.moonshot.cn/
+    iconUrl: icons/kimiai.avif
+
+  - languageModelsID: 6
+    name: Qwen
+    description: Alibaba's conversational AI model with multilingual capabilities.
+    websiteUrl: https://chat.qwen.ai/
+    iconUrl: icons/qwen.png
+
+  - languageModelsID: 7
+    name: Grok
+    description: xAI's conversational model with real-time data access and unique personality.
+    websiteUrl: https://grok.com/
+    iconUrl: icons/Grok.webp
+
+  - languageModelsID: 8
+    name: Le Chat - Mistral AI
+    description: French AI startup offering powerful open models with competitive performance.
+    websiteUrl: https://chat.mistral.ai/
+    iconUrl: icons/mistral-ai.png
+
+  - languageModelsID: 9
+    name: Meta AI
+    description: Meta's AI assistant integrated across Meta apps and services.
+    websiteUrl: https://www.meta.ai/
+    iconUrl: icons/metaai.jpg

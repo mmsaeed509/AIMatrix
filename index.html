@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Matrix - Futuristic AI Tools Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+    <!-- Include js-yaml library for parsing YAML files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="icons/logo.svg" alt="AI Matrix Logo" class="logo">
+            </div>
+            <h1 class="glitch-text">AI MATRIX HUB</h1>
+            <p class="subtitle">Discover the future of AI tools</p>
+        </header>
+
+        <nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search AI tools...">
+                <button id="search-button" class="search-btn">Search</button>
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="All">All</button>
+                <!-- Category buttons will be dynamically added here -->
+            </div>
+        </nav>
+
+        <main>
+            <div class="tools-grid" id="tools-container">
+                <!-- AI tools will be dynamically loaded here -->
+                <div class="loading">
+                    <div class="scanner"></div>
+                    <p>Scanning AI Matrix...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 AI Matrix | A Futuristic AI Tools Directory</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

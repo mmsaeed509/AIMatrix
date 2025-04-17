@@ -1,0 +1,43 @@
+categoryName: AI Agent IDEs
+tools:
+  - id: 1
+    name: Junie AI
+    description: JetBrains' AI-powered IDE assistant that helps developers write better code faster.
+    websiteUrl: https://www.jetbrains.com/junie/
+    iconUrl: icons/junie.png
+
+  - id: 2
+    name: Cursor
+    description: The AI-first code editor that helps you code faster and smarter with built-in AI assistance.
+    websiteUrl: https://www.cursor.com/
+    iconUrl: icons/cursor.png
+
+  - id: 3
+    name: Windsurf
+    description: Codeium's agentic IDE that combines AI capabilities with a seamless development experience.
+    websiteUrl: https://codeium.com/windsurf
+    iconUrl: icons/windsurf.svg
+
+  - id: 4
+    name: Zed
+    description: Zed is a next-generation code editor designed for high-performance collaboration with humans and AI.
+    websiteUrl: https://zed.dev
+    iconUrl: icons/zed.webp
+
+  - id: 5
+    name: TRAE
+    description: Trae is an adaptive AI IDE that transforms how you work, collaborating with you to run faster.
+    websiteUrl: https://www.trae.ai
+    iconUrl: icons/Trae.avif
+
+  - id: 6
+    name: FireBase Studio
+    description: FireBase Studio is a Code agent from Google to help you build apps.
+    websiteUrl: https://studio.firebase.google.com
+    iconUrl: icons/FireBaseStudio.png
+
+  - id: 7
+    name: Chat2DB
+    description: AI-powered database management and query tool.
+    websiteUrl: https://chat2db.com
+    iconUrl: icons/Chat2DB.png

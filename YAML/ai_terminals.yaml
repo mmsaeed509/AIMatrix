@@ -1,0 +1,22 @@
+categoryName: AI Terminals
+tools:
+  - id: 1
+    name: Warp
+    description: The intelligent terminal that combines AI and your dev team's knowledge in one fast, intuitive interface.
+    category: AI Terminals
+    websiteUrl: https://www.warp.dev/
+    iconUrl: icons/warp.png
+
+  - id: 2
+    name: Wave
+    description: An open-source terminal with superpowers, integrating file previews, file editing, AI, web browsing, and workspace organization.
+    category: AI Terminals
+    websiteUrl: https://www.waveterm.dev/
+    iconUrl: icons/wave.png
+
+  - id: 3
+    name: Fig
+    description: AI-powered terminal with intelligent command suggestions and autocomplete.
+    category: AI Terminals
+    websiteUrl: https://fig.io/
+    iconUrl: icons/fig.png

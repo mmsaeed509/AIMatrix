@@ -1,0 +1,36 @@
+categoryName: Content Creation & Media
+tools:
+  - id: 1
+    name: Synthesia
+    description: AI video creation platform for generating professional videos.
+    category: Content Creation & Media
+    websiteUrl: https://www.synthesia.io/
+    iconUrl: icons/synthesia.png
+
+  - id: 2
+    name: Rytr
+    description: AI writing assistant for content creation and automation.
+    category: Content Creation & Media
+    websiteUrl: https://rytr.me/
+    iconUrl: icons/rytr.png
+
+  - id: 3
+    name: Let's Enhance
+    description: AI-powered image enhancement and upscaling tool.
+    category: Content Creation & Media
+    websiteUrl: https://letsenhance.io/
+    iconUrl: icons/letsenhance.png
+
+  - id: 4
+    name: FairyTailAI
+    description: AI-powered personalized bedtime story generator.
+    category: Content Creation & Media
+    websiteUrl: https://fairytailai.com/
+    iconUrl: icons/fairytailai.png
+
+  - id: 5
+    name: Content Studio AI
+    description: AI-powered faceless video creation platform.
+    category: Content Creation & Media
+    websiteUrl: https://contentstudioai.com
+    iconUrl: icons/contentstudioai.png

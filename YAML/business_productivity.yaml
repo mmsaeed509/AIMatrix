@@ -1,0 +1,43 @@
+categoryName: Business & Productivity
+tools:
+  - id: 1
+    name: DraftLab
+    description: AI-powered Gmail assistant for email management.
+    websiteUrl: https://draftlab.ai/
+    iconUrl: icons/draftlab.png
+
+  - id: 2
+    name: Plus AI for Google Slides
+    description: Create AI-powered presentations in Google Slides.
+    websiteUrl: https://www.plusdocs.com/plus-ai-for-google-slides
+    iconUrl: icons/plusai.png
+
+  - id: 3
+    name: Documind AI
+    description: Chat with PDFs using GPT-4 technology.
+    websiteUrl: https://documind.chat
+    iconUrl: icons/documind.png
+
+  - id: 4
+    name: guidde
+    description: AI-powered video documentation creation tool.
+    websiteUrl: https://www.guidde.com
+    iconUrl: icons/guidde.png
+
+  - id: 5
+    name: Kolega
+    description: AI-powered employees for Slack and Teams.
+    websiteUrl: https://kolega.ai
+    iconUrl: icons/kolega.png
+
+  - id: 6
+    name: Genspark
+    description: Technology services company providing software development, testing, and consulting services.
+    websiteUrl: https://www.genspark.ai/
+    iconUrl: icons/genspark.png
+
+  - id: 6
+    name: Tome
+    description: Tome AI is your go-to AI-powered assistant for creating the perfect presentation content
+    websiteUrl: https://tome.app/
+    iconUrl: icons/TomeAI.png

@@ -19,7 +19,7 @@ tools:
     description: AI-powered code completion and chat assistant for developers.
     category: Development & Coding Tools
     websiteUrl: https://codeium.com/
-    iconUrl: icons/codeium.png
+    iconUrl: icons/Codeium.png
 
   - id: 4
     name: Amazon CodeWhisperer

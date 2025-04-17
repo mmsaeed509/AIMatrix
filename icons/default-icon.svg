@@ -1,47 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <!-- Background circle with gradient -->
+  <!-- Background circle with enhanced gradient -->
   <defs>
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f0f1a" />
-      <stop offset="100%" stop-color="#26075b" />
+      <stop offset="0%" stop-color="#0a0a20" />
+      <stop offset="100%" stop-color="#3a0a7d" />
     </linearGradient>
     <linearGradient id="glow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00dfd8" />
-      <stop offset="100%" stop-color="#7928ca" />
+      <stop offset="0%" stop-color="#00f5ee" />
+      <stop offset="100%" stop-color="#8a35e8" />
     </linearGradient>
-    <!-- Pulse animation -->
+    <!-- Enhanced pulse animation -->
     <radialGradient id="pulse" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.5)" stop-opacity="0.5">
-        <animate attributeName="stop-opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="rgba(72, 209, 254, 0.6)" stop-opacity="0.6">
+        <animate attributeName="stop-opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="rgba(56, 189, 248, 0)" stop-opacity="0" />
+      <stop offset="100%" stop-color="rgba(72, 209, 254, 0)" stop-opacity="0" />
     </radialGradient>
+    <!-- Matrix-like pattern -->
+    <pattern id="matrix-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" />
+      <path d="M5,0 V20 M10,0 V20 M15,0 V20 M0,5 H20 M0,10 H20 M0,15 H20" stroke="#67e8f9" stroke-width="0.5" opacity="0.3" />
+    </pattern>
   </defs>
   
   <!-- Base circle -->
   <circle cx="50" cy="50" r="45" fill="url(#bg-gradient)" />
   
+  <!-- Matrix background pattern -->
+  <circle cx="50" cy="50" r="42" fill="url(#matrix-pattern)" opacity="0.7" />
+  
   <!-- Glow effect -->
-  <circle cx="50" cy="50" r="48" fill="none" stroke="url(#glow-gradient)" stroke-width="2" opacity="0.7" />
+  <circle cx="50" cy="50" r="48" fill="none" stroke="url(#glow-gradient)" stroke-width="2.5" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="4s" repeatCount="indefinite" />
+  </circle>
   
   <!-- Pulse effect -->
   <circle cx="50" cy="50" r="40" fill="url(#pulse)" />
   
-  <!-- Circuit pattern -->
-  <path d="M20,50 H40 M60,50 H80 M50,20 V40 M50,60 V80" stroke="#67e8f9" stroke-width="1.5" stroke-dasharray="2,3" opacity="0.7" />
+  <!-- Enhanced circuit pattern -->
+  <path d="M15,50 H40 M60,50 H85 M50,15 V40 M50,60 V85" stroke="#67e8f9" stroke-width="1.5" stroke-dasharray="2,3" opacity="0.8" />
+  <path d="M25,25 L40,40 M60,60 L75,75 M25,75 L40,60 M60,40 L75,25" stroke="#a855f7" stroke-width="1" stroke-dasharray="1,2" opacity="0.6" />
   
-  <!-- Tech nodes -->
-  <circle cx="50" cy="50" r="5" fill="#a855f7" />
-  <circle cx="50" cy="30" r="3" fill="#67e8f9" />
-  <circle cx="50" cy="70" r="3" fill="#67e8f9" />
-  <circle cx="30" cy="50" r="3" fill="#67e8f9" />
-  <circle cx="70" cy="50" r="3" fill="#67e8f9" />
-  
-  <!-- Rotating ring -->
-  <circle cx="50" cy="50" r="25" fill="none" stroke="#67e8f9" stroke-width="1" stroke-dasharray="3,5" opacity="0.5">
-    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="20s" repeatCount="indefinite" />
+  <!-- Tech nodes with pulsing effect -->
+  <circle cx="50" cy="50" r="6" fill="#a855f7">
+    <animate attributeName="r" values="6;5;6" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="25" r="3" fill="#67e8f9">
+    <animate attributeName="fill" values="#67e8f9;#a855f7;#67e8f9" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="75" r="3" fill="#67e8f9">
+    <animate attributeName="fill" values="#67e8f9;#a855f7;#67e8f9" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="25" cy="50" r="3" fill="#67e8f9">
+    <animate attributeName="fill" values="#67e8f9;#a855f7;#67e8f9" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="75" cy="50" r="3" fill="#67e8f9">
+    <animate attributeName="fill" values="#67e8f9;#a855f7;#67e8f9" dur="4s" repeatCount="indefinite" />
   </circle>
   
-  <!-- AI text -->
-  <text x="50" y="53" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">AI</text>
-</svg> 
+  <!-- Double rotating rings -->
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#67e8f9" stroke-width="1" stroke-dasharray="3,5" opacity="0.6">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="20s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="50" r="32" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.4">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 50 50" to="0 50 50" dur="15s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Data flow lines -->
+  <path d="M50,50 L50,25" stroke="#67e8f9" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M50,50 L75,50" stroke="#67e8f9" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M50,50 L50,75" stroke="#67e8f9" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite" />
+  </path>
+  <path d="M50,50 L25,50" stroke="#67e8f9" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- AI text with modern styling -->
+  <text x="50" y="54" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    <tspan>AI</tspan>
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" />
+  </text>
+</svg>

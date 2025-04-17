@@ -13,3 +13,10 @@ tools:
     category: CLI AI
     websiteUrl: https://github.com/raizamartin/gemini-code
     iconUrl: icons/gemini-code.png
+
+  - cliAIID: 3
+    name: Claude Squad
+    description: Manage multiple AI agents like Codex, Claude Code, and Aider. 10x your productivity.
+    category: CLI AI
+    websiteUrl: https://github.com/smtg-ai/claude-squad
+    iconUrl: icons/default-icon.png

@@ -151,10 +151,15 @@ document.addEventListener('DOMContentLoaded', async function() {
             const linkTarget = tool.name === 'OnionGPT' ? '_self' : '_blank';
 
             toolCard.innerHTML = `
-                <img src="${tool.iconUrl}" alt="${tool.name} icon" class="tool-icon" onerror="this.src='icons/default-icon.svg'">
-                <h3 class="tool-name">${tool.name}</h3>
-                <p class="tool-description">${tool.description}</p>
-                <a href="${linkHref}" target="${linkTarget}" rel="noopener noreferrer" class="tool-link">${linkText}</a>
+                <div class="tool-card-content">
+                    <img src="${tool.iconUrl}" alt="${tool.name} icon" class="tool-icon" onerror="this.src='icons/default-icon.svg'">
+                    <h3 class="tool-name">${tool.name}</h3>
+                    <p class="tool-description">${tool.description}</p>
+                </div>
+                <div class="tool-card-actions">
+                    <button class="action-btn share-btn" data-tool="${tool.name}">Share</button>
+                    <a href="${linkHref}" target="${linkTarget}" rel="noopener noreferrer" class="action-btn visit-btn">${linkText}</a>
+                </div>
             `;
 
             toolsContainer.appendChild(toolCard);
@@ -188,6 +193,33 @@ document.addEventListener('DOMContentLoaded', async function() {
                     displayTools(filteredTools);
                 }
             });
+        });
+
+        // Setup share button event delegation
+        toolsContainer.addEventListener('click', function(e) {
+            if (e.target.classList.contains('share-btn')) {
+                const toolName = e.target.getAttribute('data-tool');
+                const tool = allTools.find(t => t.name === toolName);
+
+                if (tool) {
+                    const shareText = `Check out ${tool.name}: ${tool.description} - ${tool.websiteUrl}`;
+
+                    // Create a temporary input element
+                    const tempInput = document.createElement('input');
+                    tempInput.value = shareText;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+
+                    // Show feedback
+                    const originalText = e.target.textContent;
+                    e.target.textContent = 'Copied!';
+                    setTimeout(() => {
+                        e.target.textContent = originalText;
+                    }, 2000);
+                }
+            }
         });
 
         // Setup search functionality

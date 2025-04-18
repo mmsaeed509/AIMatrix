@@ -10,19 +10,19 @@ tools:
     name: Synthesia
     description: AI video creation platform for generating professional videos.
     websiteUrl: https://www.synthesia.io/
-    iconUrl: icons/synthesia.png
+    iconUrl: icons/Synthesia.png
 
   - id: 3
     name: Rytr
     description: AI writing assistant for content creation and automation.
     websiteUrl: https://rytr.me/
-    iconUrl: icons/rytr.png
+    iconUrl: icons/Rytr.png
 
   - id: 4
     name: Let's Enhance
     description: AI-powered image enhancement and upscaling tool.
     websiteUrl: https://letsenhance.io/
-    iconUrl: icons/letsenhance.png
+    iconUrl: icons/LetsEnhance.png
 
   - id: 5
     name: FairyTailAI
@@ -33,5 +33,5 @@ tools:
   - id: 6
     name: Content Studio AI
     description: AI-powered faceless video creation platform.
-    websiteUrl: https://contentstudioai.com
-    iconUrl: icons/contentstudioai.png
+    websiteUrl: https://contentstudio.io
+    iconUrl: icons/ContentStudioAI.png

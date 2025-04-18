@@ -10,33 +10,33 @@ tools:
     name: Plus AI for Google Slides
     description: Create AI-powered presentations in Google Slides.
     websiteUrl: https://www.plusdocs.com/plus-ai-for-google-slides
-    iconUrl: icons/plusai.png
+    iconUrl: icons/plusai.svg
 
   - id: 3
     name: Documind AI
     description: Chat with PDFs using GPT-4 technology.
     websiteUrl: https://documind.chat
-    iconUrl: icons/documind.png
+    iconUrl: icons/documind.svg
 
   - id: 4
     name: guidde
     description: AI-powered video documentation creation tool.
     websiteUrl: https://www.guidde.com
-    iconUrl: icons/guidde.png
+    iconUrl: icons/guidde.svg
 
   - id: 5
     name: Kolega
     description: AI-powered employees for Slack and Teams.
     websiteUrl: https://kolega.ai
-    iconUrl: icons/kolega.png
+    iconUrl: icons/Kolega.avif
 
   - id: 6
     name: Genspark
     description: Technology services company providing software development, testing, and consulting services.
     websiteUrl: https://www.genspark.ai/
-    iconUrl: icons/genspark.png
+    iconUrl: icons/Genspark.png
 
-  - id: 6
+  - id: 7
     name: Tome
     description: Tome AI is your go-to AI-powered assistant for creating the perfect presentation content
     websiteUrl: https://tome.app/

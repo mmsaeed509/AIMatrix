@@ -40,10 +40,16 @@ tools:
     name: Janus
     description: Unified multimodal understanding and generation model for handling various types of data and tasks.
     websiteUrl: https://github.com/deepseek-ai/Janus
-    iconUrl: https://github.com/deepseek-ai/Janus/raw/main/assets/logo.png
+    iconUrl: icons/deepseek.svg
 
   - imageGenerationID: 8
     name: Weights
     description: Platform for discovering, training and deploying open source AI models.
     websiteUrl: https://www.weights.com/
     iconUrl: https://www.weights.com/favicon.ico
+
+  - imageGenerationID: 9
+    name: Artbreeder
+    description: Create an image out of simple shapes, image and text.
+    websiteUrl: https://www.artbreeder.com
+    iconUrl: icons/Artbreeder.png

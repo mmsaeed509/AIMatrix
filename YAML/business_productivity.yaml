@@ -41,3 +41,9 @@ tools:
     description: Tome AI is your go-to AI-powered assistant for creating the perfect presentation content
     websiteUrl: https://tome.app/
     iconUrl: icons/TomeAI.png
+
+  - id: 8
+    name: RtrvrAI
+    description: AI-powered information retrieval and knowledge management tool.
+    websiteUrl: https://www.rtrvr.ai
+    iconUrl: icons/rtrvrai.webp

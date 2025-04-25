@@ -35,3 +35,9 @@ tools:
     description: AI-powered faceless video creation platform.
     websiteUrl: https://contentstudio.io
     iconUrl: icons/ContentStudioAI.png
+
+  - id: 7
+    name: Mootion
+    description: Mootion generates videos from any types of input - type in text / script, or upload video / audio, videos are ready - faceless or talking head, personal sharing or storytelling, all at your command in 4 steps.
+    websiteUrl: https://www.mootion.com
+    iconUrl: icons/Mootion.png

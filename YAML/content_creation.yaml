@@ -41,3 +41,9 @@ tools:
     description: Mootion generates videos from any types of input - type in text / script, or upload video / audio, videos are ready - faceless or talking head, personal sharing or storytelling, all at your command in 4 steps.
     websiteUrl: https://www.mootion.com
     iconUrl: icons/Mootion.png
+
+  - id: 8
+    name: Freepik
+    description: Platform for free vectors, stock photos, PSD files, and icons for graphic design projects.
+    websiteUrl: https://www.freepik.com
+    iconUrl: icons/freepik.png

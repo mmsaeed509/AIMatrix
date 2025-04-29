@@ -21,4 +21,9 @@ tools:
     websiteUrl: https://github.com/e2b-dev/fragments
     iconUrl: icons/Fragments.png
 
-
+  - aiPlatformsID: 4
+    name: Seedream AI
+    description: AI platform for creative and innovative solutions.
+    category: AI Platforms & Infrastructure
+    websiteUrl: https://seedream.pro
+    iconUrl: icons/seedream.svg

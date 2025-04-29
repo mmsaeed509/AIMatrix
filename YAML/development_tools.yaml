@@ -113,3 +113,9 @@ tools:
     description: AI-powered code suggestions and security scanning.
     websiteUrl: https://aws.amazon.com/codewhisperer/
     iconUrl: icons/AWS.png
+
+  - id: 20
+    name: BindAI Copilot
+    description: AI-powered coding assistant for developers.
+    websiteUrl: https://copilot.getbind.co
+    iconUrl: icons/BindAI-copilot.svg

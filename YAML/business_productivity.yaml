@@ -1,6 +1,12 @@
 categoryName: Business & Productivity
 tools:
   - id: 1
+    name: To Teach
+    description: AI-powered educational platform for creating and sharing knowledge.
+    websiteUrl: https://to-teach.ai
+    iconUrl: icons/to-teach.png
+
+  - id: 2
     name: DraftLab
     description: AI-powered Gmail assistant for email management.
     websiteUrl: https://draftlab.ai/

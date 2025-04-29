@@ -131,3 +131,9 @@ tools:
     description: DeepMind’s AI agent that writes competitive programming solutions.
     websiteUrl: https://deepmind.com/blog/article/Competitive-programming-with-AlphaCode
     iconUrl: icons/default-icon.svg
+
+  - aiAgentID: 23
+    name: FeloAI
+    description: AI agent for intelligent automation and assistance.
+    websiteUrl: https://felo.ai
+    iconUrl: icons/feloAI.jpeg

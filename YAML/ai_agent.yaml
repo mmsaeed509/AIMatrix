@@ -19,10 +19,10 @@ tools:
     iconUrl: icons/AgentGPT.svg
 
   - aiAgentID: 4
-    name: BabyAGI
-    description: An open-source autonomous AI agent that uses GPT for task management and completion.
-    websiteUrl: https://github.com/yoheinakajima/babyagi
-    iconUrl: icons/default-icon.svg
+    name: UI-TARS
+    description:  free and open-source AI model designed for computer control and automation.
+    websiteUrl: https://agent-tars.com
+    iconUrl: icons/UI-TARS.png
 
   - aiAgentID: 5
     name: LangChain Agents
@@ -137,3 +137,9 @@ tools:
     description: AI agent for intelligent automation and assistance.
     websiteUrl: https://felo.ai
     iconUrl: icons/feloAI.jpeg
+
+  - aiAgentID: 24
+    name: BabyAGI
+    description: An open-source autonomous AI agent that uses GPT for task management and completion.
+    websiteUrl: https://github.com/yoheinakajima/babyagi
+    iconUrl: icons/default-icon.svg

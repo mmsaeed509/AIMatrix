@@ -1,0 +1,7 @@
+categoryName: AI Web Search Engine
+tools:
+  - aiAgentID: 1
+    name: Perplexity AI
+    description: is an American web search engine that uses a large language model to process queries and synthesize responses based on web search results.
+    websiteUrl: https://www.perplexity.ai
+    iconUrl: icons/Perplexity.png

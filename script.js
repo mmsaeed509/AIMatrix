@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', async function() {
                 'YAML/ai_platforms.yaml',
                 'YAML/image_generation.yaml',
                 'YAML/content_creation.yaml',
-                'YAML/development_tools.yaml'
+                'YAML/development_tools.yaml',
+                'YAML/search_engine.yaml'
             ];
         }
     }

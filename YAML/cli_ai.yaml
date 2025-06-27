@@ -27,3 +27,10 @@ tools:
     category: CLI AI
     websiteUrl: https://github.com/openai/codex
     iconUrl: icons/OpenAI.png
+
+  - cliAIID: 5
+    name: Gemini CLI
+    description: An open-source AI agent that brings the power of Gemini directly into your terminal.
+    category: CLI AI
+    websiteUrl: https://github.com/google-gemini/gemini-cli
+    iconUrl: icons/gemini.png

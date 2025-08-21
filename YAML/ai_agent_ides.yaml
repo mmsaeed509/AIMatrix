@@ -39,5 +39,5 @@ tools:
   - id: 7
     name: Chat2DB
     description: AI-powered database management and query tool.
-    websiteUrl: https://chat2db.com
+    websiteUrl: https://chat2db.ai
     iconUrl: icons/Chat2DB.png

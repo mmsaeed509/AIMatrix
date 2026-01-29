@@ -47,3 +47,9 @@ tools:
     description: The AI IDE for prototype to production.
     websiteUrl: https://kiro.dev
     iconUrl: icons/kiro.png
+
+  - id: 9
+    name: Antigravity
+    description: Google's experimental AI-powered development environment.
+    websiteUrl: https://antigravity.google/
+    iconUrl: icons/Antigravity.png

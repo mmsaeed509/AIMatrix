@@ -1,34 +1,42 @@
 categoryName: CLI AI
 tools:
+
   - cliAIID: 1
+    name: Stakpak
+    description: AI-powered terminal and development environment.
+    category: CLI AI
+    websiteUrl: https://stakpak.dev/
+    iconUrl: icons/Stakpak.png
+
+  - cliAIID: 2
     name: Claude Code
     description: Anthropic's agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.
     category: CLI AI
     websiteUrl: https://github.com/anthropics/claude-code
     iconUrl: icons/Anthropic.png
 
-  - cliAIID: 2
+  - cliAIID: 3
     name: Gemini Code
     description: Google's Gemini 2.5 Pro code assistant for terminal-based development.
     category: CLI AI
     websiteUrl: https://github.com/raizamartin/gemini-code
     iconUrl: https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg
 
-  - cliAIID: 3
+  - cliAIID: 4
     name: Claude Squad
     description: Manage multiple AI agents like Codex, Claude Code, and Aider. 10x your productivity.
     category: CLI AI
     websiteUrl: https://github.com/smtg-ai/claude-squad
     iconUrl: icons/Anthropic.png
 
-  - cliAIID: 4
+  - cliAIID: 5
     name: OpenAI Codex CLI
     description: Lightweight coding agent that runs in your terminal.
     category: CLI AI
     websiteUrl: https://github.com/openai/codex
     iconUrl: icons/OpenAI.png
 
-  - cliAIID: 5
+  - cliAIID: 6
     name: Gemini CLI
     description: An open-source AI agent that brings the power of Gemini directly into your terminal.
     category: CLI AI

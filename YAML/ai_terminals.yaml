@@ -20,10 +20,3 @@ tools:
     category: AI Terminals
     websiteUrl: https://fig.io/
     iconUrl: icons/fig.png
-
-  - id: 4
-    name: Stakpak
-    description: AI-powered terminal and development environment.
-    category: AI Terminals
-    websiteUrl: https://stakpak.dev/
-    iconUrl: icons/Stakpak.png
